@@ -3,5 +3,7 @@ package main
 import "github.com/bomkz/cloudsync/pilots"
 
 func main() {
-	pilots.ReadPilotSaveFile()
+	pilotsfile := pilots.ReadPilotSaveFile()
+
+	updatePilotReq := cloudstore.updatePilotRequestStruct{}
 }
