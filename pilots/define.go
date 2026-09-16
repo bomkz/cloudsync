@@ -6,6 +6,17 @@ import (
 	"github.com/bomkz/cloudsync/pilots/vtscfg"
 )
 
+type UpdatePilotRequestStruct struct {
+	Request string                       `json:"request"`
+	Body    UpdatePilotRequestBodyStruct `json:"body"`
+}
+
+type UpdatePilotRequestBodyStruct struct {
+	Token     string     `json:"token"`
+	Name      string     `json:"name"`
+	PilotData PilotsFile `json:"pilotData"`
+}
+
 type PilotsFile struct {
 	Pilots Pilots `vts:"PILOTS" json:"PILOTS"`
 }
