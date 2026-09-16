@@ -3,13 +3,13 @@ module github.com/bomkz/cloudsync
 go 1.27.0
 
 require (
+	github.com/bomkz/cloudserver v0.0.0-20260916081843-fdd43064d3a7
 	github.com/ravener/discord-oauth2 v0.0.0-20230514095040-ae65713199b3
 	github.com/zalando/go-keyring v0.2.8
 	golang.org/x/oauth2 v0.37.0
 )
 
 require (
-	github.com/bomkz/cloudserver v0.0.0-20260916081843-fdd43064d3a7 // indirect
 	github.com/bytedance/gopkg v0.1.3 // indirect
 	github.com/bytedance/sonic v1.15.0 // indirect
 	github.com/bytedance/sonic/loader v0.5.0 // indirect

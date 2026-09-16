@@ -1,9 +1,10 @@
 package main
 
-import "github.com/bomkz/cloudsync/pilots"
+import (
+	"github.com/bomkz/cloudsync/auth"
+)
 
 func main() {
-	pilotsfile := pilots.ReadPilotSaveFile()
+	auth.AuthenticateUser()
 
-	updatePilotReq := cloudstore.updatePilotRequestStruct{}
 }
