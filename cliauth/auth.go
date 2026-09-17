@@ -1,4 +1,4 @@
-package auth
+package cliauth
 
 import (
 	"context"
