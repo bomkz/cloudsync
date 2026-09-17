@@ -7,12 +7,14 @@ require (
 	github.com/bomkz/cloudserver v0.0.0-20260917052500-3b730873eec4
 	github.com/ravener/discord-oauth2 v0.0.0-20230514095040-ae65713199b3
 	github.com/zalando/go-keyring v0.2.8
+	golang.org/x/image v0.45.0
 	golang.org/x/oauth2 v0.37.0
 )
 
 require (
 	fyne.io/systray v1.12.3-0.20260810170012-af4e8e793ec4 // indirect
 	github.com/BurntSushi/toml v1.6.0 // indirect
+	github.com/FyshOS/fancyfs v0.0.1 // indirect
 	github.com/anthonynsimon/bild v0.14.0 // indirect
 	github.com/clipperhouse/uax29/v2 v2.2.0 // indirect
 	github.com/danieljoos/wincred v1.2.3 // indirect
@@ -39,8 +41,7 @@ require (
 	github.com/stretchr/testify v1.12.1 // indirect
 	github.com/yuin/goldmark v1.8.2 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
-	golang.org/x/image v0.24.0
 	golang.org/x/net v0.51.0 // indirect
 	golang.org/x/sys v0.48.0 // indirect
-	golang.org/x/text v0.34.0 // indirect
+	golang.org/x/text v0.41.0 // indirect
 )

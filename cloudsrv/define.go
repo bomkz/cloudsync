@@ -1,34 +1,41 @@
 package cloudsrv
 
-import "github.com/bomkz/cloudsync/pilots"
+import (
+	"github.com/bomkz/cloudsync/global"
+)
+
+type GetPilotsReqStruct struct {
+	Req  string `json:"request"`
+	Auth string `json:"auth"`
+}
 
 type UpdatePilotReqStruct struct {
-	Req   string            `json:"req"`
-	Pilot pilots.PilotsFile `json:"body"`
+	Req   string            `json:"request"`
+	Pilot global.PilotsFile `json:"body"`
 	Auth  string            `json:"auth"`
 }
 
 type UpdatePilotPilotStruct struct {
 	Name  string            `json:"name"`
-	Pilot pilots.PilotsFile `json:"pilotFile"`
+	Pilot global.PilotsFile `json:"pilotFile"`
 }
 
 type GetPilotReqStruct struct {
-	Req  string `json:"req"`
+	Req  string `json:"request"`
 	Name string `json:"body"`
 	Auth string `json:"auth"`
 }
 
 type GetPilotRespStruct struct {
-	Req   string            `json:"req"`
-	Pilot pilots.PilotsFile `json:"body"`
+	Req   string            `json:"request"`
+	Pilot global.PilotsFile `json:"body"`
 }
 
 type OkRespStruct struct {
-	Req string `json:"req"`
+	Req string `json:"request"`
 }
 
 type ErrRespStruct struct {
-	Req   string `json:"req"`
+	Req   string `json:"request"`
 	Error string `json:"error"`
 }
