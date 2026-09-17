@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/bomkz/cloudsync/auth"
+	"github.com/bomkz/cloudsync/cliauth"
 )
 
 func checkAuth() {
@@ -33,12 +33,12 @@ func checkAuth() {
 	if err != nil && err == os.ErrNotExist {
 
 		err = nil
-		err = auth.AuthenticateUser()
+		err = cliauth.AuthenticateUser()
 		if err != nil {
 			log.Fatal(err)
 		}
 
-		token, err := auth.GetAuthToken()
+		token, err := cliauth.GetAuthToken()
 
 		if err != nil {
 			log.Fatal(err)
